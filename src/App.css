@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.recipes-title h2{
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #000000e3;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipes p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  width: 150px;
+  border-bottom: 1px dashed gray;
+  color: #262626;
+  cursor: pointer;
+  transition: .5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipes p:hover{
+  color: #4fd675;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipes-display{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.recipes-products{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85%; 
+}
+.recipes-products img{
+  width: 250px;
+  padding: 0;
+}
+.recipes-products h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 10px 0;
+  color: #262626;
+}
+.recipes-rate{
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:991px){
+
+  .recipes-display{
+      display: inherit;
   }
-  to {
-    transform: rotate(360deg);
+  .recipes-title h2{
+      text-align: center;
+      font-size: 35px;
   }
+  .recipes p{
+      font-size: 17px;
+  }
+  .recipes p{
+      text-align: center;
+      width: 55%;
+      margin: 0 auto;
+      padding-top: 20px;
+  }
+  .recipes-products{
+      width: 100%;
+  }
+  .recipes-products img{
+      padding-top: 20px;
+  }
+  .recipes-rate{
+      padding-bottom: 20px;
+  }
+
+
+
+
 }
